@@ -44,6 +44,22 @@
     overflow: visible !important;
 }
 
+table, tr, td {
+    border: 1px solid;
+}
+
+.aqua {
+    background-color: aqua;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
 @keyframes App-logo-spin {
     from {
     transform: rotate(0deg);

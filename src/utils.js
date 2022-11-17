@@ -49,7 +49,7 @@ async function creatPdf({
         const pageWidth = doc.internal.pageSize.getWidth();
 
         if (i === 0) {
-            doc.text("2022 rugpj.", 250, 10);
+            doc.text("2022 spal.", 250, 10);
             elHeight = 18;
             elWidth = 200;
             padding = 180;
@@ -229,6 +229,199 @@ async function creatPdf({
         //    elHeight = elHeight * ratio - padding * 2;
         //    elWidth = elWidth * ratio - padding * 2;
         //}
+
+        if (i === 31) {
+            padding = 200;
+            elHeight = 16;
+            elWidth = 200;
+        }
+        if (i === 32) {
+            top = 45;
+            padding = 10;
+            elHeight = 16;
+            const ratio = pageWidth / elWidth;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+        if (i === 33) {
+            top = 70;
+            padding = 20;
+            elHeight = 170;
+            elWidth = 170;
+        }
+        if (i === 34) {
+            top = 70;
+            padding = 240;
+            elHeight = 170;
+            elWidth = 170;
+        }
+        if (i === 35) {
+            top = 250;
+            padding = 10;
+            elHeight = 10;
+            elWidth = 300;
+        }
+        if (i === 36) {
+            top = 270;
+            padding = 20;
+            elHeight = 170;
+            elWidth = 170;
+        }
+        if (i === 37) {
+            top = 270;
+            padding = 240;
+            elHeight = 170;
+            elWidth = 170;
+        }
+        if (i === 38) {
+            padding = 200;
+            elHeight = 16;
+            elWidth = 150;
+        }
+        if (i === 39) {
+            top = 45;
+            padding = 10;
+            elHeight = 10;
+            elWidth = 300;
+        }
+        if (i === 40) {
+            top = 70;
+            padding = 20;
+            elHeight = 170;
+            elWidth = 170;
+        }
+        if (i === 41) {
+            top = 70;
+            padding = 240;
+            elHeight = 170;
+            elWidth = 170;
+        }
+        if (i === 42) {
+            top = 250;
+            padding = 10;
+            elHeight = 10;
+            elWidth = 200;
+        }
+        if (i === 43) {
+            top = 270;
+            padding = 20;
+            elHeight = 170;
+            elWidth = 300;
+        }
+        if (i === 44) {
+            padding = 10;
+            elHeight = 10;
+            elWidth = 280;
+        }
+        if (i === 45) {
+            top = 50;
+            padding = 20;
+            elHeight = 170;
+            elWidth = 170;
+        }
+        if (i === 46) {
+            top = 50;
+            padding = 240;
+            elHeight = 170;
+            elWidth = 170;
+        }
+        if (i === 47) {
+            top = 250;
+            padding = 10;
+            elHeight = 10;
+            elWidth = 150;
+        }
+        if (i === 48) {
+            top = 270;
+            padding = 20;
+            elHeight = 170;
+            elWidth = 170;
+        }
+        if (i === 49) {
+            padding = 10;
+            elHeight = 10;
+            elWidth = 200;
+        }
+        if (i === 50) {
+            top = 50;
+            padding = 20;
+            elHeight = 170;
+            elWidth = 170;
+        }
+        if (i === 51) {
+            top = 50;
+            padding = 240;
+            elHeight = 170;
+            elWidth = 170;
+        }
+        if (i === 52) {
+            top = 235;
+            padding = 10;
+            elHeight = 30;
+            const ratio = pageWidth / elWidth;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+        if (i === 53) {
+            top = 270;
+            padding = 20;
+            elHeight = 160;
+            elWidth = 160;
+        }
+        if (i === 54) {
+            top = 270;
+            padding = 240;
+            elHeight = 160;
+            elWidth = 160;
+        }
+        if (i === 55) {
+            padding = 230;
+            elHeight = 16;
+            elWidth = 120;
+        }
+        if (i === 56) {
+            top = 50;
+            padding = 10;
+            elHeight = 170;
+            const ratio = pageWidth / elWidth;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+        if (i === 57) {
+            top = 250;
+            padding = 230;
+            elHeight = 16;
+            elWidth = 120;
+        }
+        if (i === 58) {
+            top = 270;
+            padding = 10;
+            elHeight = 170;
+            const ratio = pageWidth / elWidth;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+        if (i === 59) {
+            padding = 230;
+            elHeight = 16;
+            elWidth = 120;
+        }
+        if (i === 60) {
+            top = 45;
+            padding = 10;
+            elHeight = 400;
+            const ratio = pageWidth / elWidth;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+        if (i === 61) {
+            padding = 10;
+            elHeight = 400;
+            const ratio = pageWidth / elWidth;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+        if (i === 62) {
+            padding = 10;
+            elHeight = 400;
+            const ratio = pageWidth / elWidth;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+
 
         const pageHeight = doc.internal.pageSize.getHeight();
 
