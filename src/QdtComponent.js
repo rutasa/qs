@@ -1,11 +1,9 @@
 ﻿import React, { useEffect, useRef } from 'react';
 import {
-    qdtEnigma, qdtCapabilityApp, qdtCompose, QdtViz,
+     qdtCapabilityApp, QdtViz,
 } from 'qdt-components';
 
-const identity = Math.random().toString(32).substr(2, 8);
-
-const config = {
+/* const config = {
     host: "localhost",
     secure: false,
     port: 4848,
@@ -14,31 +12,31 @@ const config = {
     appId: "KK Prastovos TECHNINĖ TARNYBA (2).qvf"
 }
 
-const engineApiAppPromise = qdtEnigma(config);
 const capabilityApiAppPromise = qdtCapabilityApp(config);
-
+*/
 function QdtComponent({
-    component, properties, options, appIndex,
+    properties, options, identity, appId
 }) {
     const elementRef = useRef(null);
+    const config = {
+        host: "localhost",
+        secure: false,
+        port: 4848,
+        prefix: "",
+        identity,
+        appId
+    }
+
+    const capabilityApiAppPromise = qdtCapabilityApp(config);
     const init = async () => {
-        let app = await engineApiAppPromise;
-        if (appIndex === 2) {
-            app = await capabilityApiAppPromise;
-            QdtViz({
-                element: elementRef.current,
-                app,
-                options,
-            });
-        } else {
-            app = await capabilityApiAppPromise;
-            QdtViz({
-                element: elementRef.current,
-                app,
-                options,
-                properties
-            });
-        }
+        
+        let app = await capabilityApiAppPromise;
+        QdtViz({
+            element: elementRef.current,
+            app,
+            options,
+            properties
+        });
     };
 
     useEffect(() => {
