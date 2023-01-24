@@ -54,7 +54,7 @@ async function creatPdf({
             elWidth = 200;
             padding = 220;
         }
-        if (i === 1) {
+        /*if (i === 1) {
             elHeight = 150;
             elWidth = 180;
             padding = 10;
@@ -594,8 +594,8 @@ async function creatPdf({
             top = 100;
             const ratio = pageWidth / elWidth;
             elWidth = elWidth * ratio - padding * 2;
-        }
-        /*
+        }*/
+        
         if (i === 1) {
             padding = 10
             top = 40
@@ -622,48 +622,49 @@ async function creatPdf({
 
         if (i === 5) {
             elHeight = 18;
+            elWidth = 300;
+            padding = 160;
+        }
+        if (i === 6) {
+            padding = 10
+            const ratio = pageWidth / elWidth;
+            elHeight = 280;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+        if (i === 7) {
+            elWidth = 10;
+            top = 220;
+            elHeight = 220;
+        }
+
+        if (i === 8) {
+            elHeight = 18;
             elWidth = 400;
             padding = 80;
         }
-        if (i === 6) {
+        if (i === 9) {
             padding = 10
             const ratio = pageWidth / elWidth;
             elHeight = 130;
             elWidth = elWidth * ratio - padding * 2;
         }
-        if (i === 7) {
+        if (i === 10) {
             const ratio = pageWidth / elWidth;
             elHeight = 130;
             elWidth = elWidth * ratio - padding * 2;
         }
 
-        if (i === 8) {
+        if (i === 11) {
             top = 358;
             padding = 300;
             elHeight = 80;
             elWidth = 150;
         }
-        if (i === 9) {
+        if (i === 12) {
             top = 358;
             padding = 450;
             elHeight = 80;
             elWidth = 150;
-        }
-        if (i === 10) {
-            elHeight = 18;
-            elWidth = 400;
-            padding = 80;
-        }
-        if (i === 11) {
-            padding = 10;
-            const ratio = pageWidth / elWidth;
-            elHeight = 180;
-            elWidth = elWidth * ratio - padding * 2;
-        }
-        if (i === 12) {
-            const ratio = pageWidth / elWidth;
-            elHeight = 180;
-            elWidth = elWidth * ratio - padding * 2;
         }
         if (i === 13) {
             elHeight = 18;
@@ -683,8 +684,8 @@ async function creatPdf({
         }
         if (i === 16) {
             elHeight = 18;
-            elWidth = 200;
-            padding = 180;
+            elWidth = 400;
+            padding = 80;
         }
         if (i === 17) {
             padding = 10;
@@ -698,73 +699,148 @@ async function creatPdf({
             elWidth = elWidth * ratio - padding * 2;
         }
         if (i === 19) {
+            elHeight = 18;
+            elWidth = 200;
+            padding = 180;
+        }
+        if (i === 20) {
+            padding = 10;
+            const ratio = pageWidth / elWidth;
+            elHeight = 180;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+        if (i === 21) {
+            const ratio = pageWidth / elWidth;
+            elHeight = 180;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+        if (i === 22) {
             padding = 240;
             elHeight = 18;
             elWidth = 100;
         }
-        if (i === 20) {
+        if (i === 23) {
             top = 45;
-            padding = 100;
-            elHeight = 12;
+            padding = 80;
+            elHeight = 16;
             elWidth = 40;
         }
-        if (i === 21) {
+        if (i === 24) {
             top = 45;
             padding = 260;
-            elHeight = 12;
+            elHeight = 16;
             elWidth = 40;
         }
-        if (i === 22) {
+        if (i === 25) {
             top = 45;
-            padding = 420;
-            elHeight = 12;
+            padding = 440;
+            elHeight = 16;
             elWidth = 40;
         }
-        if (i === 23) {
+        if (i === 26) {
             padding = 10;
             elHeight = 150;
             elWidth = 180;
         }
-        if (i === 24) {
+        if (i === 27) {
             top = 45 + 30;
             padding = 200;
             elHeight = 150;
             elWidth = 180;
         }
-        if (i === 25) {
+        if (i === 28) {
             top = 45 + 30;
             padding = 10 + 180 + 180 + 20;
             elHeight = 150;
             elWidth = 180;
         }
-        if (i === 26) {
+        if (i === 29) {
             padding = 10;
             elHeight = 80;
             elWidth = 150;
         }
-        if (i === 27) {
+        if (i === 30) {
             top = 75 + 168
             padding = 10 + 150;
             elHeight = 80;
             elWidth = 150;
         }
-        if (i === 28) {
+        if (i === 31) {
             top = 75 + 168
             padding = 10 + 150 + 150;
             elHeight = 80;
             elWidth = 150;
         }
-        if (i === 29) {
+        if (i === 32) {
             top = 75 + 168
             padding = 10 + 150 + 150 + 150;
             elHeight = 80;
             elWidth = 150;
         }
-        if (i === 30) {
+        if (i === 33) {
             padding = 10;
             elHeight = 80;
             elWidth = 150;
-        } */
+        }
+        if (i === 34) {
+            elHeight = 18;
+            elWidth = 200;
+            padding = 200;
+        }
+        if (i === 35) {
+            padding = 10;
+            top = 45;
+            const ratio = pageWidth / elWidth;
+            elHeight = 350;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+        if (i === 36) {
+            padding = 10;
+            const ratio = pageWidth / elWidth;
+            elHeight = 200;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+        if (i === 37) {
+            top = 220;
+            elWidth = 10;
+            elHeight = 200;
+        }
+        if (i === 38) {
+            elHeight = 18;
+            elWidth = 200;
+            padding = 200;
+        }
+        if (i === 39) {
+            padding = 10;
+            top = 40;
+            const ratio = pageWidth / elWidth;
+            elHeight = 400;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+        if (i === 40) {
+            padding = 10;
+            const ratio = pageWidth / elWidth;
+            elHeight = 420;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+        if (i === 41) {
+            padding = 10;
+            const ratio = pageWidth / elWidth;
+            elHeight = 420;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+        if (i === 42) {
+            padding = 10;
+            const ratio = pageWidth / elWidth;
+            elHeight = 420;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+        if (i === 43) {
+            padding = 10;
+            const ratio = pageWidth / elWidth;
+            elHeight = 420;
+            elWidth = elWidth * ratio - padding * 2;
+        }
 
         //else if (elWidth > pageWidth) {
         //    const ratio = pageWidth / elWidth;
