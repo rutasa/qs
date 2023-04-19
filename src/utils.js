@@ -628,7 +628,7 @@ async function creatPdf({
         if (i === 6) {
             padding = 10
             const ratio = pageWidth / elWidth;
-            elHeight = 280;
+            elHeight = 380;
             elWidth = elWidth * ratio - padding * 2;
         }
         if (i === 7) {
@@ -666,116 +666,129 @@ async function creatPdf({
             elHeight = 80;
             elWidth = 150;
         }
+
         if (i === 13) {
-            elHeight = 18;
-            elWidth = 400;
-            padding = 80;
+            top = 358;
+            padding = 10;
+            elHeight = 80;
+            elWidth = 130;
         }
         if (i === 14) {
-            padding = 10;
-            const ratio = pageWidth / elWidth;
-            elHeight = 180;
-            elWidth = elWidth * ratio - padding * 2;
+            top = 358;
+            padding = 160;
+            elHeight = 80;
+            elWidth = 130;
         }
+
+
         if (i === 15) {
-            const ratio = pageWidth / elWidth;
-            elHeight = 180;
-            elWidth = elWidth * ratio - padding * 2;
-        }
-        if (i === 16) {
             elHeight = 18;
             elWidth = 400;
             padding = 80;
         }
-        if (i === 17) {
+        if (i === 16) {
             padding = 10;
             const ratio = pageWidth / elWidth;
             elHeight = 180;
-            elWidth = elWidth * ratio - padding * 2;
+            elWidth = elWidth * ratio - padding * 2 - 130;
         }
+
+        if (i === 17) {
+            top = 70;
+            padding = 490;
+            elHeight = 80;
+            elWidth = 130;
+        }
+
         if (i === 18) {
+            top = 230
+            padding=10
             const ratio = pageWidth / elWidth;
             elHeight = 180;
             elWidth = elWidth * ratio - padding * 2;
         }
+
         if (i === 19) {
             elHeight = 18;
-            elWidth = 200;
-            padding = 180;
+            elWidth = 400;
+            padding = 80;
         }
         if (i === 20) {
             padding = 10;
             const ratio = pageWidth / elWidth;
             elHeight = 180;
-            elWidth = elWidth * ratio - padding * 2;
+            elWidth = elWidth * ratio - padding * 2 - 130;
         }
+
         if (i === 21) {
+            top = 70;
+            padding = 490;
+            elHeight = 80;
+            elWidth = 130;
+        }
+
+        if (i === 22) {
+            padding = 10;
+            top = 230;
             const ratio = pageWidth / elWidth;
             elHeight = 180;
             elWidth = elWidth * ratio - padding * 2;
         }
-        if (i === 22) {
+        if (i === 23) {
+            elHeight = 18;
+            elWidth = 200;
+            padding = 180;
+        }
+        if (i === 24) {
+            padding = 10;
+            const ratio = pageWidth / elWidth;
+            elHeight = 180;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+        if (i === 25) {
+            const ratio = pageWidth / elWidth;
+            elHeight = 180;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+        if (i === 26) {
             padding = 240;
             elHeight = 18;
             elWidth = 100;
         }
-        if (i === 23) {
+        if (i === 27) {
             top = 45;
             padding = 80;
             elHeight = 16;
             elWidth = 40;
         }
-        if (i === 24) {
+        if (i === 28) {
             top = 45;
             padding = 260;
             elHeight = 16;
             elWidth = 40;
         }
-        if (i === 25) {
+        if (i === 29) {
             top = 45;
             padding = 440;
             elHeight = 16;
             elWidth = 40;
         }
-        if (i === 26) {
+        if (i === 30) {
             padding = 10;
             elHeight = 150;
             elWidth = 180;
         }
-        if (i === 27) {
+        if (i === 31) {
             top = 45 + 30;
             padding = 200;
             elHeight = 150;
             elWidth = 180;
         }
-        if (i === 28) {
+        if (i === 32) {
             top = 45 + 30;
             padding = 10 + 180 + 180 + 20;
             elHeight = 150;
             elWidth = 180;
-        }
-        if (i === 29) {
-            padding = 10;
-            elHeight = 80;
-            elWidth = 150;
-        }
-        if (i === 30) {
-            top = 75 + 168
-            padding = 10 + 150;
-            elHeight = 80;
-            elWidth = 150;
-        }
-        if (i === 31) {
-            top = 75 + 168
-            padding = 10 + 150 + 150;
-            elHeight = 80;
-            elWidth = 150;
-        }
-        if (i === 32) {
-            top = 75 + 168
-            padding = 10 + 150 + 150 + 150;
-            elHeight = 80;
-            elWidth = 150;
         }
         if (i === 33) {
             padding = 10;
@@ -783,27 +796,27 @@ async function creatPdf({
             elWidth = 150;
         }
         if (i === 34) {
-            elHeight = 18;
-            elWidth = 200;
-            padding = 200;
+            top = 75 + 168
+            padding = 10 + 150;
+            elHeight = 80;
+            elWidth = 150;
         }
         if (i === 35) {
-            padding = 10;
-            top = 45;
-            const ratio = pageWidth / elWidth;
-            elHeight = 350;
-            elWidth = elWidth * ratio - padding * 2;
+            top = 75 + 168
+            padding = 10 + 150 + 150;
+            elHeight = 80;
+            elWidth = 150;
         }
         if (i === 36) {
-            padding = 10;
-            const ratio = pageWidth / elWidth;
-            elHeight = 200;
-            elWidth = elWidth * ratio - padding * 2;
+            top = 75 + 168
+            padding = 10 + 150 + 150 + 150;
+            elHeight = 80;
+            elWidth = 150;
         }
         if (i === 37) {
-            top = 220;
-            elWidth = 10;
-            elHeight = 200;
+            padding = 10;
+            elHeight = 80;
+            elWidth = 150;
         }
         if (i === 38) {
             elHeight = 18;
@@ -836,6 +849,12 @@ async function creatPdf({
             elWidth = elWidth * ratio - padding * 2;
         }
         if (i === 43) {
+            padding = 10;
+            const ratio = pageWidth / elWidth;
+            elHeight = 420;
+            elWidth = elWidth * ratio - padding * 2;
+        }
+        if (i === 44) {
             padding = 10;
             const ratio = pageWidth / elWidth;
             elHeight = 420;

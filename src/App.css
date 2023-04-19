@@ -42,7 +42,12 @@
 
 .sn-kpi .sn-kpi-ellips-text {
     overflow: visible !important;
+    white-space: nowrap;
 }
+
+.sn-kpi .sn-kpi-ellips-text[title~="pokytis"] {
+    white-space: inherit !important;
+ }
 
 table, tr, td {
     border: 1px solid;
